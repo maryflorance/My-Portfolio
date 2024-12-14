@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!---------------------header------------------------>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="collection/logo.png.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full-Stack developer</p>
+            <h1>Hi, I'm <span>Mary</span><br>Florance From India</h1>
+        </div>
+    </div>
+</div>
+<!--------------------about------------------------>
+<div id="about">
+    <div class="container"> 
+        <div class="row">
+            <div class="about-col-1">
+                <img src="collection/user.png.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a highly skilled Full-Stack Developer with strong expertise in Python,
+                   Django, and MongoDB, as well as proficiency in Java, C, HTML, CSS, and JavaScript.
+                   I specialize in developing efficient, scalable solutions, with a focus on solving 
+                   complex technical challenges. My experience includes working in fast-paced environments
+                   where I manage end-to-end software development, from design to deployment.
+                   I am adaptable, collaborative, and detail-oriented, consistently delivering high-quality 
+                   results. Driven by a passion for innovation, I continuously seek opportunities to apply my 
+                   skills and knowledge to create impactful technology solutions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Advance level in Python Programming</li>
+                        <li><span>SQL</span><br>Advance level in SQL</li>
+                        <li><span>Java</span><br>Intermediate level in Java Programming</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>June 2024 - Aug 2024</span><br>Full Stack development Intern</li>
+                        <li><span>June 2023 - Aug 2023</span><br>IOT Intern</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Btech</span><br>2021-current<br>KKR And KSR Institute of Technology & Sciences</li>
+                        <li><span>Intermediate</span><br>2019-2021<br>VJ Junior College</li>
+                        <li><span>10th</span><br>2018-2019<br>Sri Chaitanya School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------services--------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>Virtual Shopping Plaza</h2>
+                <p>The Virtual Shopping Plaza project addresses the challenge of inaccurate dress fitting in online shopping 
+                   by creating a 3D virtual environment for real-time product browsing and interactions. This innovative solution
+                   enhances customer experience with intuitive navigation and live support, earning recognition for its uniqueness 
+                   and a patent filing.</p>
+                   <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-building-wheat"></i>
+                <h2>Granary Using IOT</h2>
+                <p>The Granary Using IoT project tackles the issue of suboptimal grain storage by developing an IoT-based system to 
+                   monitor temperature and moisture levels. The solution includes an alert system for real-time notifications, earning
+                   recognition as one of the top 10 best projects at the department level.</p>
+                   <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------Portfolio------------------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="collection/vrpic.png.png">
+                <div class="layer">
+                    <h3>Online Website</h3>
+                    <p>3D virtual environment for real-time product browsing and interactions</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="collection/iot.png.png">
+                <div class="layer">
+                    <h3>Device</h3>
+                    <p>IoT-based system to monitor temperature and moisture levels. The solution includes an alert system for real-time notifications</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------------------------------Contact------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> maryflorance2004@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9676999545</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mary-florance-bonthapuri-5229332a9"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/maryflorance"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="collection/My CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Florance. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbymj6a7hVhjYG9EZQTxTcgV01Icj9WFeHFGewEerM45fSA5XBRw-YmMLYiBE8RDWWrn/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
